@@ -5,12 +5,15 @@ namespace App\Http\Controllers\Guest;
 use App\Http\Controllers\Controller;
 use App\Models\train;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class TrainController extends Controller
 {
     // claim all the trains
     public function index(){
-        $trains = train::all();
+        $today = Carbon::today()->toDateString();
+
+        $trains = train::whereDate('Orario_di_partenza', $today)->get();
 
         return view('pages.welcome', compact('trains'));
     }
