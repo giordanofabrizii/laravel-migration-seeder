@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    background-color: aquamarine;
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+
+        article{
+            width: calc((100% / 4) - 1rem);
+            padding: 1rem;
+            background-color: darkcyan;
+            margin: .5rem;
+            border: 3px solid rosybrown;
+        }
+    }
+}

@@ -10,11 +10,6 @@
     @vite('resource/js/app.js')
 </head>
 <body>
-    <header>
-        <h1>
-            Trains
-        </h1>
-    </header>
     <main>
         @yield('main-content')
     </main>
