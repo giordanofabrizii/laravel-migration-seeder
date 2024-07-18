@@ -12,16 +12,11 @@
 <body>
     <header>
         <h1>
-            Titolo del layout
+            Trains
         </h1>
     </header>
     <main>
         @yield('main-content')
     </main>
-    <footer>
-        <h1>
-            Titolo del layout
-        </h1>
-    </footer>
 </body>
 </html>
